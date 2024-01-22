@@ -4,6 +4,7 @@
 dist
 tmp
 /out-tsc
+obj
 
 # dependencies
 node_modules
@@ -39,3 +40,6 @@ testem.log
 Thumbs.db
 
 .nx/cache
+
+# Next.js
+.next

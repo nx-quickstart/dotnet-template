@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\apps",
+    "\\apps\\backend",
+    "\\libs",
+    "\\libs\\backend",
+    "\\libs\\backend\\data-access-db"
+  ],
+  "SelectedNode": "\\Directory.Build.props",
+  "PreviewInSolutionExplorer": false
+}

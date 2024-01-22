@@ -1,0 +1,6 @@
+@DotnetTemplate.Apps.Backend_HostAddress = http://localhost:5233
+
+GET {{DotnetTemplate.Apps.Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
