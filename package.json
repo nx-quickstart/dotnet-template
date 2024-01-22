@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "nx g @nx-dotnet/core:restore",
-    "dev": "pnpm run db:up && pnpm dlx concurrently --kill-others \"npm:dev:api\" \"npm:dev:web\"",
+    "dev": "pnpm run db:up && pnpm run db:update && pnpm dlx concurrently --kill-others \"npm:dev:api\" \"npm:dev:web\"",
     "dev:api": "nx serve backend",
     "dev:web": "nx serve frontend",
     "dev:swagger-codegen": "nx codegen backend-swagger",
