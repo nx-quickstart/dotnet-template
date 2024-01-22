@@ -30,13 +30,7 @@ npx nx-quickstart@latest
 
 3. Provide your specific postgreSQL enviroment or use default one that is generead by docker-compose file in [tools/docker/dev.docker-compose.yml](tools/docker/dev.docker-compose.yml)
 
-4. To create first postgreSQL table you need to run this commands
-
-```bash
-pnpm run db:update
-```
-
-5. Run development server
+4. Run development server
 
 ```bash
 pnpm run dev
