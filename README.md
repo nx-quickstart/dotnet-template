@@ -30,7 +30,19 @@ npx nx-quickstart@latest
 
 3. Provide your specific postgreSQL enviroment or use default one that is generead by docker-compose file in [tools/docker/dev.docker-compose.yml](tools/docker/dev.docker-compose.yml)
 
-4. Run development server
+4. Compose docker container
+
+```bash
+pnpm run db:up
+```
+
+5. Update database with latest migrations
+
+```bash
+pnpm run db:update
+```
+
+6. Run development server
 
 ```bash
 pnpm run dev
