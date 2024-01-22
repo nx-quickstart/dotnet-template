@@ -33,10 +33,6 @@ npx nx-quickstart@latest
 4. To create first postgreSQL table you need to run this commands
 
 ```bash
-  pnpm run db:migrate
-```
-
-```bash
 pnpm run db:update
 ```
 
