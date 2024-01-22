@@ -1,8 +1,7 @@
 import { api } from '@dotnet-template/frontend-utils';
-import { User } from '@dotnet-template/generated/backend-types';
 
 export default async function Index() {
-  const user = await api.get<User[]>('User');
+  const user = await api.get('User');
 
   return (
     <div>
