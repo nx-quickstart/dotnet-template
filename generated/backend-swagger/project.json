@@ -4,7 +4,7 @@
   "targets": {
     "build": {
       "executor": "nx:noop",
-      "outputs": ["generated/backend-swagger"]
+      "outputs": ["{projectRoot}"]
     },
     "codegen": {
       "generator": "typescript-axios",
@@ -14,7 +14,6 @@
         "outputProject": "generated-backend-types",
         "useNxPluginOpenApi": true
       },
-
       "dependsOn": ["^swagger"]
     }
   },

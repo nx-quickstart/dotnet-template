@@ -3,8 +3,15 @@
   "targetDefaults": {
     "build": {
       "cache": true,
-      "dependsOn": ["^build", "codegen", "^codegen"],
-      "inputs": ["production", "^production"]
+      "dependsOn": [
+        "^build",
+        "codegen",
+        "^codegen"
+      ],
+      "inputs": [
+        "production",
+        "^production"
+      ]
     },
     "lint": {
       "cache": true,
@@ -17,7 +24,11 @@
     },
     "@nx/jest:jest": {
       "cache": true,
-      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
+      "inputs": [
+        "default",
+        "^production",
+        "{workspaceRoot}/jest.preset.js"
+      ],
       "options": {
         "passWithNoTests": true
       },
@@ -36,11 +47,17 @@
     },
     "e2e": {
       "cache": true,
-      "inputs": ["default", "^production"]
+      "inputs": [
+        "default",
+        "^production"
+      ]
     }
   },
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -57,7 +74,9 @@
     "sharedGlobals": []
   },
   "nxCloudAccessToken": "NTY2ZDZjMjctOGNiZS00OTE2LWE4NzktNDIzZmRjNDY4NzIyfHJlYWQtd3JpdGU=",
-  "plugins": ["@nx-dotnet/core"],
+  "plugins": [
+    "@nx-dotnet/core"
+  ],
   "generators": {
     "@nx/react": {
       "application": {
